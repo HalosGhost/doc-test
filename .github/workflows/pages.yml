@@ -29,7 +29,6 @@ jobs:
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: halosghost/doc-test-ext
-          publish_branch: doc-test
+          deploy_key: ${{ secrets.TX_PAGES_DEPLOY_KEY }}
+          external_repository: mit-dci/opencbdc-tx-pages
           publish_dir: ./doxygen_generated/html
